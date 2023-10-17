@@ -10,7 +10,7 @@
 
 ## Instruction to run the application
 
-### git clone
+### git clone https://github.com/pallaveekumari/Alphaware_Assignment.git
 ### cd Alphaware_Assignment
 ### npm i
 ### npm start
