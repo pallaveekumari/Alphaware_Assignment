@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import { AppContext } from '../../Context/MyContextProvider';
-import styles from "./ProductCard.module.css"
+import React, { useContext } from "react";
+import { AppContext } from "../../Context/MyContextProvider";
+import styles from "./ProductCard.module.css";
 const ProductCard = ({ cardData, placeofCall }) => {
   const appContext = useContext(AppContext);
   return (
@@ -29,6 +29,6 @@ const ProductCard = ({ cardData, placeofCall }) => {
       )}
     </div>
   );
-}
+};
 
-export default ProductCard
+export default ProductCard;

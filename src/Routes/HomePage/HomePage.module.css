@@ -1,41 +1,37 @@
-.homepageImg{
-    background: url("https://png.pngtree.com/background/20210710/original/pngtree-shampoo-promotion-season-simple-green-banner-picture-image_1032764.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+.homepageImg {
+  background: url("https://png.pngtree.com/background/20210710/original/pngtree-shampoo-promotion-season-simple-green-banner-picture-image_1032764.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   height: 100vh;
-position: relative;
-
+  position: relative;
 }
 
-.heading{
-    position: absolute;
-    left: 200px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    font-weight: bold;
-    color: green;
+.heading {
+  position: absolute;
+  left: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: green;
 }
-
-
 
 @media (max-width: 768px) {
-    .homepageImg {
-        background-size: contain; 
-    }
+  .homepageImg {
+    background-size: contain;
+  }
 
-    .heading {
-        left: 20px;
-        font-size: 30px;
-    }
+  .heading {
+    left: 20px;
+    font-size: 30px;
+  }
 }
 
-
 @media (min-width: 769px) and (max-width: 1024px) {
-    .heading {
-        left: 100px;
-        font-size: 40px; 
-    }
+  .heading {
+    left: 100px;
+    font-size: 40px;
+  }
 }

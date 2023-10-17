@@ -1,8 +1,8 @@
-import React, { useContext } from 'react'
-import { AppContext } from '../../Context/MyContextProvider';
-import styles from "./Cart.module.css"
-import ProductCard from '../../Components/ProductCard/ProductCard';
-import Navbar from '../../Components/Navbar/Navbar';
+import React, { useContext } from "react";
+import { AppContext } from "../../Context/MyContextProvider";
+import styles from "./Cart.module.css";
+import ProductCard from "../../Components/ProductCard/ProductCard";
+import Navbar from "../../Components/Navbar/Navbar";
 const Cart = () => {
   const MyContext = useContext(AppContext);
   return (
@@ -12,11 +12,7 @@ const Cart = () => {
         <div className={styles.Container}>
           {MyContext.cartData.map((product, i) => {
             return (
-              <ProductCard
-                key={i}
-                cardData={product}
-                placeofCall="cartPage"
-              />
+              <ProductCard key={i} cardData={product} placeofCall="cartPage" />
             );
           })}
         </div>
@@ -25,6 +21,6 @@ const Cart = () => {
       )}
     </div>
   );
-}
+};
 
-export default Cart
+export default Cart;
