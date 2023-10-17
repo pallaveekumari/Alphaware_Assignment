@@ -18,3 +18,24 @@ position: relative;
     font-weight: bold;
     color: green;
 }
+
+
+
+@media (max-width: 768px) {
+    .homepageImg {
+        background-size: contain; 
+    }
+
+    .heading {
+        left: 20px;
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .heading {
+        left: 100px;
+        font-size: 40px; 
+    }
+}

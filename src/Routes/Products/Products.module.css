@@ -16,3 +16,19 @@ background-size: cover;
     place-items: center;
     margin: auto;
   }
+
+
+  @media (max-width: 768px) {
+    .Container {
+        grid-template-columns: 1fr; 
+        width: 90%; 
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Container {
+        grid-template-columns: repeat(2, 1fr); 
+        width: 85%; 
+    }
+}

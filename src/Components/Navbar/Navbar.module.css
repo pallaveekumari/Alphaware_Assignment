@@ -23,9 +23,56 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s linear;
+    position: relative;
   }
   
   .navIcon:hover {
     background-color: rgb(23, 73, 21);
     color: white;
+
+  }
+
+
+  .cartDataNumber{
+position: absolute;
+font-size: 15px;
+top: -10px;
+right: -10px;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+background-color: white;
+color: purple;
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+ 
+
+  @media (max-width: 768px) {
+      .navbar {
+          justify-content: center;
+          flex-direction: column;
+          height: auto;
+          gap: 1rem;
+      }
+  
+      .navIcon {
+          margin: 10px 0;
+          padding: 10px;
+      }
+    }
+  @media (min-width: 769px) and (max-width: 1024px) {
+      .navbar {
+          justify-content: space-between;
+          flex-direction: row;
+          height: 80px;
+          gap: 3rem;
+      }
+  
+      .navIcon {
+          margin: 0;
+          padding: 0 2rem;
+      }
   }

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import styles from "./Navbar.module.css"
+import { AppContext } from '../../Context/MyContextProvider';
 const Navbar = () => {
+  const MyContext=useContext(AppContext)
   const navigate = useNavigate();
   return (
     <div className={styles.navbar}>
@@ -12,7 +14,10 @@ const Navbar = () => {
         Products
       </div>
       <div onClick={() => navigate("/cart")} className={styles.navIcon}>
+
         Cart
+
+        <div className={styles.cartDataNumber}>{MyContext.cartData.length}</div>
       </div>
     </div>
   );
