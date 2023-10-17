@@ -1,0 +1,46 @@
+.cardContainer {
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .image {
+    width: 50%;
+    margin: auto;
+    height: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .name {
+    margin-top: 1rem;
+  }
+  
+  .price > span {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .addToCartButton {
+    padding: 0.5rem 1rem;
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  .addToCartButton:hover {
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }

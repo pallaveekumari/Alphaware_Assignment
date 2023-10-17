@@ -18,7 +18,7 @@ const Products = () => {
       <Navbar />
       <div className={styles.Container}>
         {MyContext.products.map((product, i) => {
-          return <ProductCard key={i} cardData={product} cardPlace='productsPage' />;
+          return <ProductCard key={i} cardData={product} placeofCall='productsPage' />;
         })}
       </div>
     </div>
